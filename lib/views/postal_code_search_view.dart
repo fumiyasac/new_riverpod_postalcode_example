@@ -13,7 +13,7 @@ class PostalCodeSearchView extends HookConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('郵便番号検索'),
+        title: const Text('郵便番号検索(New)'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
