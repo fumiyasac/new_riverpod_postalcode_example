@@ -39,7 +39,7 @@ flowchart LR
 
 __【Before】__
 
-```dart: address.dart
+```dart:address.dart
 class Address {
   final String prefcode;
   final String prefecture;
@@ -66,7 +66,7 @@ class Address {
 
 __【After】__
 
-```dart: address.dart
+```dart:address.dart
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'address.freezed.dart';
@@ -98,7 +98,7 @@ class Address with _$Address {
 
 __【Before】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import '../models/address.dart';
@@ -121,7 +121,7 @@ class PostalCodeRepository {
 
 __【After】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -154,7 +154,7 @@ class PostalCodeRepository {
 
 __【Before】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import '../models/address.dart';
 
 class PostalCodeState {
@@ -188,7 +188,7 @@ class PostalCodeState {
 
 __【After】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import 'package:freezed_annotation/freezed_annotation.dart';
 import '../models/address.dart';
 
@@ -209,7 +209,7 @@ class PostalCodeState with _$PostalCodeState {
 
 __【Before】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_example/view_models/postal_code_state.dart';
 import '../repositories/postal_code_repository.dart';
@@ -255,7 +255,7 @@ class PostalCodeViewModel extends StateNotifier<PostalCodeState> {
 
 __【After】__
 
-```dart: postal_code_repository.dart
+```dart:postal_code_repository.dart
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../states/postal_code_state.dart';
 import '../repositories/postal_code_repository.dart';
