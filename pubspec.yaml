@@ -58,6 +58,7 @@ dev_dependencies:
   riverpod_generator: ^2.6.4
   freezed: ^2.5.8
   json_serializable: ^6.9.3
+  mockito: ^5.4.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
