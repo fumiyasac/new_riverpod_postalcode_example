@@ -1,3 +1,4 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -6,7 +7,7 @@ import '../models/address.dart';
 part 'postal_code_repository.g.dart';
 
 @riverpod
-PostalCodeRepository postalCodeRepository(PostalCodeRepositoryRef ref) {
+PostalCodeRepository postalCodeRepository(Ref ref) {
   return PostalCodeRepository();
 }
 
